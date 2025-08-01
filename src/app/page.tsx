@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { withBasePath } from "../../lib/imagePath";
 
 export default function Home() {
   return (
@@ -6,7 +7,7 @@ export default function Home() {
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
-          src="/next.svg"
+          src={withBasePath("/next.svg")}
           alt="Next.js logo"
           width={180}
           height={38}
@@ -34,7 +35,7 @@ export default function Home() {
           >
             <Image
               className="dark:invert"
-              src="/vercel.svg"
+              src={withBasePath("/vercel.svg")}
               alt="Vercel logomark"
               width={20}
               height={20}
