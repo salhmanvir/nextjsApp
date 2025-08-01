@@ -52,7 +52,7 @@ export default function Home() {
           </a>
         </div>
       </main>
-      {/* <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
+      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
@@ -61,7 +61,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/file.svg"
+            src={withBasePath("/file.svg")}
             alt="File icon"
             width={16}
             height={16}
@@ -76,7 +76,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/window.svg"
+            src={withBasePath("/window.svg")}
             alt="Window icon"
             width={16}
             height={16}
@@ -91,14 +91,14 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/globe.svg"
+            src={withBasePath("/globe.svg")}
             alt="Globe icon"
             width={16}
             height={16}
           />
           Go to nextjs.org →
         </a>
-      </footer> */}
+      </footer>
     </div>
   );
 }
